@@ -123,8 +123,6 @@ html {
 .flex-row {
     display: flex;
     justify-content: space-around;
-    align-content: flex-start;
-    gap: 15px;
 }
 
 .flex-column{
