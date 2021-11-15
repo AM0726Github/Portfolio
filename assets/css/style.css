@@ -109,3 +109,46 @@ html {
   } 
 
 /* Hero section Stiling end*/
+
+/* Section About me stiling */
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column{
+    font-size: 48px;
+    border-right: 3px solid;
+    color: var(--secondary-color);
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 20px;
+    text-align: right;
+    margin: 30px 30px 35px auto;
+    width: 40%;
+}
+
+.flex-column h2{
+    font-size: 30px;
+    font-style: italic;
+    padding-top: 0;
+    padding-right: 0;
+    margin: 5px 0;
+}
+
+.p-about-me { 
+    margin: 30px 30px 35px auto;
+    text-align: center;
+}
+
+.p-about-me p {
+    padding-bottom: 20px;
+    text-align: left; 
+}
