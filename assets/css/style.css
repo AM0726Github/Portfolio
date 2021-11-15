@@ -8,29 +8,23 @@
     --about-me-work-border: #333366;
     --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
   }
-  
-  * {
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  } 
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
   }
-/* Global variable definitions */
-:root {
-    --header-footer-background-color: #404040;
-    --lightskyblue: lightskyblue;
-    --lightgray: lightgray;
-    --about-me-work-border: #333366;
-    --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
-  }
-  
-  /* Start of Semantic code */
-  
-  /* Smoth Scrolling effect */
-  html {
+
+/* Smoth Scrolling */
+html {
     scroll-behavior: smooth;
   }
   
-  /* Start of Header code */
+/*Header styling*/
   header {
     display: flex; /* Flex container to display the child elements as flex with space between and wrap */
     justify-content: space-between;
@@ -39,9 +33,22 @@
     background-color: var(--header-footer-background-color); 
   }
   
+  header a {
+    text-decoration: none;
+  }
+
   header h1 {
+
     /* At bigger screens create space at left of h1 on header */
     padding-left: 50px;
+    padding-right: 10px;
+    margin: 5px 0;
+    background-color: var(--lightskyblue);
+
+  }
+
+  header h1 a{
+  color: var(--header-footer-background-color);
   }
   
   header nav ul {
@@ -64,13 +71,41 @@
   }
   
   /* Remove text anchor default decoreations and apply specific styles individulally*/
-  header a {
+  header nav ul li a {
     /* Longer bootom border under the element as mockup */
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5px;
-    text-decoration: none;
     border-bottom: 2px solid var(--lightskyblue);
     color: var(--lightskyblue);
   }
-  /* HEADER / NAVBAR STYLES END */
+/*Header styling end*/
+
+
+/* Hero section Stiling */
+
+.hero {
+    background-image: url('../images/hero_bg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: end;
+    background-attachment: fixed;
+    background-position: 80%;
+  }
+
+  .my_photo img {
+    max-width: 200px;
+  }
+
+  .we_strong_together h2 {
+    font-size: 30px;
+    font-style: italic;
+    padding-left: 50px;
+    padding-right: 10px;
+    margin: 5px 0;
+    background-color: var(--lightskyblue);
+  } 
+
+/* Hero section Stiling end*/
