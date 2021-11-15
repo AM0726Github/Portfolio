@@ -1,1 +1,76 @@
-/*  */
+/* globa styles */
+
+/* global variables*/
+:root {
+    --header-footer-background-color: #404040;
+    --lightskyblue: lightskyblue;
+    --lightgray: lightgray;
+    --about-me-work-border: #333366;
+    --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+/* Global variable definitions */
+:root {
+    --header-footer-background-color: #404040;
+    --lightskyblue: lightskyblue;
+    --lightgray: lightgray;
+    --about-me-work-border: #333366;
+    --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
+  }
+  
+  /* Start of Semantic code */
+  
+  /* Smoth Scrolling effect */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Start of Header code */
+  header {
+    display: flex; /* Flex container to display the child elements as flex with space between and wrap */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: var(--header-footer-background-color); 
+  }
+  
+  header h1 {
+    /* At bigger screens create space at left of h1 on header */
+    padding-left: 50px;
+  }
+  
+  header nav ul {
+    display: flex; /* Flex container to display the child elements as flex with flex-end, wrap, and align the items in center */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-right: 0px;
+  }
+  
+  header nav ul li {
+    /*Viewport font-size to help with the responsiveness of the web page */
+    font-size: 1.8vw;
+    /* Align nave element to closely match the header h1 element*/
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+  }
+  
+  /* Remove text anchor default decoreations and apply specific styles individulally*/
+  header a {
+    /* Longer bootom border under the element as mockup */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid var(--lightskyblue);
+    color: var(--lightskyblue);
+  }
+  /* HEADER / NAVBAR STYLES END */
