@@ -116,15 +116,17 @@ html {
 /* Section About me stiling */
 
 .about {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 .flex-row {
     display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    gap: 15px;
 }
+
 .flex-column{
     font-size: 48px;
     border-right: 3px solid;
@@ -134,7 +136,8 @@ html {
     padding-bottom: 20px;
     text-align: right;
     margin: 30px 30px 35px auto;
-    width: 200px;
+    width: 400px;
+    justify-content: start;
 }
 
 .flex-column h2{
@@ -161,12 +164,9 @@ html {
 
 
 .works {
-    width:60%;
-    margin: 0 auto;
+    width:100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .works-samples {
@@ -189,13 +189,59 @@ html {
 .work-pic_1 img{
     height: 300px;
     width: 100%;
-    flex-grow: 2;
     display: flex;
 }
 
 .work-pic_2 img{
-    flex-grow: 1;
     display: flex;
 }
 
 /* Section works stiling end*/
+
+/* section contact me stying */
+
+.contact  {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.contactArticle {
+    text-align: center;
+}
+
+.contact nav ul {
+    display: flex; /* Flex container to display the child elements as flex with flex-end, wrap, and align the items in center */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-right: 0px;
+  }
+  
+.contact nav ul li {
+    list-style: none;
+    /*Viewport font-size to help with the responsiveness of the web page */
+    font-size: 1.8vw;
+    /* Align nave element to closely match the header h1 element*/
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+  }
+  
+  /* Remove text anchor default decoreations and apply specific styles individulally*/
+.contact nav ul li a {
+    /* Longer bootom border under the element as mockup */
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 4px solid var(--header-footer-background-color);
+    color: var(--secondary-color);
+  }
+
+/* section contact me stying end*/
