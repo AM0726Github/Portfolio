@@ -4,31 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adding bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Alik Margaryan | Portfolio Page</title>
 </head>
 <body>
     <!--Navigaton-->
     <header>
-        <h1>
-            <a href="index.html">Alik A. Margaryan</a>
-        </h1>
-          <nav>
-            <ul>
-                <li>
-                  <a href="#about_me">About Me</a>
-                </li>
-                <li>
-                  <a href="#my_works">Works</a>
-                </li>
-                <li>
-                  <a href="#my_contacts">Contact Me</a>
-                </li>
-                <li>
-                  <a href="resume.html">Resume</a>
-                </li>
-              </ul>
-            </nav>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="#">
+                <img src="./assets/images/Alik.gif" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28">
+              </a>
+          
+              <!-- <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a> -->
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                  <a class="navbar-item" href="#about_me">
+                    About
+                  </a>
+                  <a class="navbar-item" href="#my_works">
+                    Works
+                  </a>
+                  <a class="navbar-item" href="#my_contacts">
+                    Contact Me
+                  </a>
+                  <a class="navbar-item" href="resume.html">
+                    Contact Me
+                  </a>
+                </div>
+        </nav>
     </header>
     
     <!--Hero-->
